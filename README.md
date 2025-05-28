@@ -36,17 +36,7 @@ O banco (`vida_mais.db`) possui 3 tabelas:
 
 ## 📂 Estrutura de pastas
 
-clinica-vida-mais/
-├── main.py
-├── dados/
-│ ├── medicos.csv
-│ └── pacientes.json
-├── db/
-│ └── vida_mais.db
-├── relatorios/
-│ └── consultas_por_medico.csv
-├── .gitignore
-└── README.md
+<pre> ```bash clinica-vida-mais/ ├── main.py ├── dados/ │ ├── medicos.csv │ └── pacientes.json ├── db/ │ └── vida_mais.db ├── relatorios/ │ └── consultas_por_medico.csv ├── .gitignore └── README.md ``` </pre>
 
 ---
 
