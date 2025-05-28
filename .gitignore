@@ -1,0 +1,12 @@
+# Ignorar cache do Python
+__pycache__/
+*.pyc
+
+# Ignorar banco de dados SQLite
+*.db
+
+# Ignorar relatórios exportados
+*.csv
+
+# Ignorar arquivos temporários do VS Code
+.vscode/

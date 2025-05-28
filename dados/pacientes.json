@@ -1,0 +1,14 @@
+[
+    {
+        "nome": "Ana Paula",
+        "cpf": "12345678900",
+        "data_nascimento": "1990-05-12",
+        "telefone": "85999887766"
+    },
+    {
+        "nome": "Bruno Lima",
+        "cpf": "98765432100",
+        "data_nascimento": "1985-11-23",
+        "telefone": "85988776655"
+    }
+]
