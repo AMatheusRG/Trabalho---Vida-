@@ -9,6 +9,9 @@ os.makedirs('db', exist_ok=True)
 # Caminho do banco de dados
 DB_PATH = 'db/vida_mais.db'
 
+def limpar_tela():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Função de criação de tabelas
 def criar_tabelas():
     conexao = sqlite3.connect(DB_PATH)
@@ -244,7 +247,10 @@ def exportar_relatorio_consultas_csv():
     
 def menu():
     while True:
-        print("\n--- MENU CLÍNICA VIDA+ ---")
+        limpar_tela()
+        print("=" * 40)
+        print("      SISTEMA CLÍNICA VIDA+      ")
+        print("=" * 40)
         print("1. Cadastrar médico")
         print("2. Cadastrar paciente")
         print("3. Agendar consulta")
@@ -252,25 +258,35 @@ def menu():
         print("5. Relatório: consultas por médico (terminal)")
         print("6. Exportar relatório CSV")
         print("7. Sair")
+        print("=" * 40)
+
         escolha = input("Escolha uma opção: ")
 
         if escolha == '1':
+            limpar_tela()
             cadastrar_medico()
         elif escolha == '2':
+            limpar_tela()
             cadastrar_paciente()
         elif escolha == '3':
+            limpar_tela()
             agendar_consulta()
         elif escolha == '4':
+            limpar_tela()
             listar_consultas_por_paciente()
         elif escolha == '5':
+            limpar_tela()
             relatorio_consultas_por_medico()
         elif escolha == '6':
+            limpar_tela()
             exportar_relatorio_consultas_csv()
         elif escolha == '7':
-            print("Encerrando o sistema.")
+            print("\nEncerrando o sistema. Até logo!")
             break
         else:
-            print("Opção inválida. Tente novamente.")
+            print("\n⚠️ Opção inválida. Tente novamente.")
+
+        input("\nPressione ENTER para continuar...")
 
 if __name__ == "__main__":
     criar_tabelas()
